@@ -1,8 +1,8 @@
 com/crud/tasks/domain/Task.java
  com.crud.tasks.domain.Task
-com/crud/tasks/controller/TaskController.java
- com.crud.tasks.controller.TaskController
-com/crud/tasks/TasksApplication.java
- com.crud.tasks.TasksApplication
 com/crud/tasks/domain/TaskDto.java
  com.crud.tasks.domain.TaskDto
+com/crud/tasks/TasksApplication.java
+ com.crud.tasks.TasksApplication
+com/crud/tasks/controller/TaskController.java
+ com.crud.tasks.controller.TaskController
