@@ -1,0 +1,6 @@
+com/crud/tasks/domain/Task.java
+ com.crud.tasks.domain.Task
+com/crud/tasks/TasksApplication.java
+ com.crud.tasks.TasksApplication
+com/crud/tasks/domain/TaskDto.java
+ com.crud.tasks.domain.TaskDto
