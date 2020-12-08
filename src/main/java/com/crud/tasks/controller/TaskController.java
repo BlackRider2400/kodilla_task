@@ -13,13 +13,18 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/v1/task")
-@RequiredArgsConstructor
 public class TaskController {
 
     private final DbService service;
     private final TaskMapper taskMapper;
+
+    public TaskController(DbService service, TaskMapper taskMapper) {
+        this.service = service;
+        this.taskMapper = taskMapper;
+    }
 
     @GetMapping(value = "getTasks")
     public List<TaskDto> getTasks(){
@@ -40,7 +45,7 @@ public class TaskController {
     }
 
     @PutMapping(value = "updateTask")
-    public TaskDto updateTask(TaskDto taskDto){
+    public TaskDto updateTask(@RequestBody TaskDto taskDto){
         Task task = taskMapper.mapToTask(taskDto);
         Task savedTask = service.saveTask(task);
         return taskMapper.mapToTaskDto(savedTask);
