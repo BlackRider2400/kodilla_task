@@ -1,7 +1,7 @@
 com/crud/tasks/service/DbService.java
  com.crud.tasks.service.DbService
-com/crud/tasks/domain/TrelloBoardDto.java
- com.crud.tasks.domain.TrelloBoardDto
+com/crud/tasks/mapper/TaskMapper.java
+ com.crud.tasks.mapper.TaskMapper
 com/crud/tasks/controller/TaskController.java
  com.crud.tasks.controller.TaskController
 com/crud/tasks/domain/Task.java
@@ -16,9 +16,19 @@ com/crud/tasks/controller/TaskNotFoundException.java
  com.crud.tasks.controller.TaskNotFoundException
 com/crud/tasks/config/CoreConfiguration.java
  com.crud.tasks.config.CoreConfiguration
-com/crud/tasks/mapper/TaskMapper.java
- com.crud.tasks.mapper.TaskMapper
-com/crud/tasks/trello/client/TrelloClient.java
- com.crud.tasks.trello.client.TrelloClient
+com/crud/tasks/domain/TrelloBoardDto.java
+ com.crud.tasks.domain.TrelloBoardDto
+com/crud/tasks/domain/TrelloListDto.java
+ com.crud.tasks.domain.TrelloListDto
+com/crud/tasks/domain/TrelloCardDto.java
+ com.crud.tasks.domain.TrelloCardDto
+com/crud/tasks/domain/BadgesDto.java
+ com.crud.tasks.domain.BadgesDto
+com/crud/tasks/domain/AttachmentsByTypeDto.java
+ com.crud.tasks.domain.AttachmentsByTypeDto
+com/crud/tasks/domain/CreatedTrelloCard.java
+ com.crud.tasks.domain.CreatedTrelloCard
 com/crud/tasks/controller/TrelloController.java
  com.crud.tasks.controller.TrelloController
+com/crud/tasks/trello/client/TrelloClient.java
+ com.crud.tasks.trello.client.TrelloClient
