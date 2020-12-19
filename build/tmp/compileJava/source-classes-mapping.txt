@@ -20,14 +20,16 @@ com/crud/tasks/domain/TrelloBoardDto.java
  com.crud.tasks.domain.TrelloBoardDto
 com/crud/tasks/domain/TrelloListDto.java
  com.crud.tasks.domain.TrelloListDto
-com/crud/tasks/domain/TrelloCardDto.java
- com.crud.tasks.domain.TrelloCardDto
+com/crud/tasks/trello/config/TrelloConfig.java
+ com.crud.tasks.trello.config.TrelloConfig
 com/crud/tasks/domain/BadgesDto.java
  com.crud.tasks.domain.BadgesDto
 com/crud/tasks/domain/AttachmentsByTypeDto.java
  com.crud.tasks.domain.AttachmentsByTypeDto
 com/crud/tasks/domain/CreatedTrelloCard.java
  com.crud.tasks.domain.CreatedTrelloCard
+com/crud/tasks/domain/TrelloCardDto.java
+ com.crud.tasks.domain.TrelloCardDto
 com/crud/tasks/controller/TrelloController.java
  com.crud.tasks.controller.TrelloController
 com/crud/tasks/trello/client/TrelloClient.java
