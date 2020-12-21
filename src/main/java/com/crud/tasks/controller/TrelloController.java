@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@CrossOrigin("*")
 @RequiredArgsConstructor
 @RequestMapping("/v1/trello")
 @RestController
