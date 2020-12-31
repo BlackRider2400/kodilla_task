@@ -6,8 +6,8 @@ com/crud/tasks/domain/TrelloCardDto.java
  com.crud.tasks.domain.TrelloCardDto
 com/crud/tasks/domain/TaskDto.java
  com.crud.tasks.domain.TaskDto
-com/crud/tasks/controller/TrelloController.java
- com.crud.tasks.controller.TrelloController
+com/crud/tasks/config/CoreConfiguration.java
+ com.crud.tasks.config.CoreConfiguration
 com/crud/tasks/trello/config/TrelloConfig.java
  com.crud.tasks.trello.config.TrelloConfig
 com/crud/tasks/trello/client/TrelloClient.java
@@ -24,6 +24,8 @@ com/crud/tasks/domain/Task.java
  com.crud.tasks.domain.Task
 com/crud/tasks/domain/AttachmentsByTypeDto.java
  com.crud.tasks.domain.AttachmentsByTypeDto
+com/crud/tasks/controller/TrelloController.java
+ com.crud.tasks.controller.TrelloController
 com/crud/tasks/domain/TrelloListDto.java
  com.crud.tasks.domain.TrelloListDto
 com/crud/tasks/repository/TaskRepository.java
@@ -32,5 +34,8 @@ com/crud/tasks/domain/BadgesDto.java
  com.crud.tasks.domain.BadgesDto
 com/crud/tasks/TasksApplication.java
  com.crud.tasks.TasksApplication
-com/crud/tasks/config/CoreConfiguration.java
- com.crud.tasks.config.CoreConfiguration
+com/crud/tasks/service/SimpleEmailService.java
+ com.crud.tasks.service.SimpleEmailService
+com/crud/tasks/domain/Mail.java
+ com.crud.tasks.domain.Mail
+ com.crud.tasks.domain.Mail$MailBuilder
