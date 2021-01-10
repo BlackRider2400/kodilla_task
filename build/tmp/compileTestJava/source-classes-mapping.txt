@@ -2,7 +2,9 @@ com/crud/tasks/TasksApplicationTests.java
  com.crud.tasks.TasksApplicationTests
 com/crud/tasks/service/SimpleEmailServiceTest.java
  com.crud.tasks.service.SimpleEmailServiceTest
-com/crud/tasks/trello/client/TrelloClientTest.java
- com.crud.tasks.trello.client.TrelloClientTest
 com/crud/tasks/mapper/TrelloMapperTestSuite.java
  com.crud.tasks.mapper.TrelloMapperTestSuite
+com/crud/tasks/trello/client/TrelloClientTest.java
+ com.crud.tasks.trello.client.TrelloClientTest
+com/crud/tasks/trello/facade/TrelloFacadeTestSuite.java
+ com.crud.tasks.trello.facade.TrelloFacadeTest
