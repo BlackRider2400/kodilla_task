@@ -96,6 +96,9 @@ class TrelloMapperTestSuite {
 
         //Then
         assertEquals(cardDto.getListId(), card.getListId());
+        assertEquals(cardDto.getPos(), card.getPos());
+        assertEquals(cardDto.getDescription(), card.getDescription());
+        assertEquals(cardDto.getName(), card.getName());
     }
 
     @Test
@@ -108,5 +111,8 @@ class TrelloMapperTestSuite {
 
         //Then
         assertEquals(cardDto.getListId(), card.getListId());
+        assertEquals(cardDto.getPos(), card.getPos());
+        assertEquals(cardDto.getDescription(), card.getDescription());
+        assertEquals(cardDto.getName(), card.getName());
     }
 }
