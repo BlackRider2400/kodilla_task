@@ -1,18 +1,18 @@
 com/crud/tasks/mapper/TrelloMapperTestSuite.java
  com.crud.tasks.mapper.TrelloMapperTestSuite
+com/crud/tasks/trello/config/TrelloConfigTest.java
+ com.crud.tasks.trello.config.TrelloConfigTest
+com/crud/tasks/trello/facade/TrelloFacadeTestSuite.java
+ com.crud.tasks.trello.facade.TrelloFacadeTest
 com/crud/tasks/service/SimpleEmailServiceTest.java
  com.crud.tasks.service.SimpleEmailServiceTest
 com/crud/tasks/TasksApplicationTests.java
  com.crud.tasks.TasksApplicationTests
 com/crud/tasks/trello/client/TrelloClientTest.java
  com.crud.tasks.trello.client.TrelloClientTest
-com/crud/tasks/trello/facade/TrelloFacadeTestSuite.java
- com.crud.tasks.trello.facade.TrelloFacadeTest
 com/crud/tasks/mapper/TaskMapperTest.java
  com.crud.tasks.mapper.TaskMapperTest
-com/crud/tasks/controller/TaskControllerTest.java
- com.crud.tasks.controller.TaskControllerTest
-com/crud/tasks/trello/config/TrelloConfigTest.java
- com.crud.tasks.trello.config.TrelloConfigTest
 com/crud/tasks/controller/TrelloControllerTest.java
  com.crud.tasks.controller.TrelloControllerTest
+com/crud/tasks/controller/TaskControllerTest.java
+ com.crud.tasks.controller.TaskControllerTest
