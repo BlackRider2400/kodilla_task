@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My welcome page</title>
+</head>
+<body>
+    <h1>First thymeleaf page.</h1>
+    <span th:text="${variable}"></span>
+    <br>
+    <span th:text="${two}+${star}+${two}+${equals}+${two}*${two}"></span>
+    <br>
+    <span th:text="${two}+${star}+${two}+${plus}+${two}+${equals}"></span>
+    <span th:text="${two}*${two}+${two}"></span>
+    <br>
+    <span th:text="${two}+${minus}+${two}+${star}+${two}+${equals}"></span>
+    <span th:text="${two}-${two}*${two}"></span>
+</body>
+</html>

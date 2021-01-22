@@ -37,8 +37,8 @@ com/crud/tasks/domain/TrelloList.java
  com.crud.tasks.domain.TrelloList
 com/crud/tasks/trello/validator/TrelloValidator.java
  com.crud.tasks.trello.validator.TrelloValidator
-com/crud/tasks/sheduler/EmailScheduler.java
- com.crud.tasks.sheduler.EmailScheduler
+com/crud/tasks/trello/client/TrelloClient.java
+ com.crud.tasks.trello.client.TrelloClient
 com/crud/tasks/service/SimpleEmailService.java
  com.crud.tasks.service.SimpleEmailService
 com/crud/tasks/domain/CreatedTrelloCardDto.java
@@ -55,5 +55,7 @@ com/crud/tasks/domain/TrelloBoardDto.java
  com.crud.tasks.domain.TrelloBoardDto
 com/crud/tasks/mapper/TrelloMapper.java
  com.crud.tasks.mapper.TrelloMapper
-com/crud/tasks/trello/client/TrelloClient.java
- com.crud.tasks.trello.client.TrelloClient
+com/crud/tasks/sheduler/EmailScheduler.java
+ com.crud.tasks.sheduler.EmailScheduler
+com/crud/tasks/controller/StaticWebPageController.java
+ com.crud.tasks.controller.StaticWebPageController
