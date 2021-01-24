@@ -1,5 +1,5 @@
-com/crud/tasks/controller/TaskController.java
- com.crud.tasks.controller.TaskController
+com/crud/tasks/sheduler/EmailScheduler.java
+ com.crud.tasks.sheduler.EmailScheduler
 com/crud/tasks/domain/TrelloCardDto.java
  com.crud.tasks.domain.TrelloCardDto
 com/crud/tasks/domain/TaskDto.java
@@ -16,8 +16,8 @@ com/crud/tasks/domain/BadgesDto.java
  com.crud.tasks.domain.BadgesDto
 com/crud/tasks/TasksApplication.java
  com.crud.tasks.TasksApplication
-com/crud/tasks/controller/TrelloController.java
- com.crud.tasks.controller.TrelloController
+com/crud/tasks/service/TrelloService.java
+ com.crud.tasks.service.TrelloService
 com/crud/tasks/domain/TrelloListDto.java
  com.crud.tasks.domain.TrelloListDto
 com/crud/tasks/trello/validator/TrelloValidator.java
@@ -57,7 +57,7 @@ com/crud/tasks/service/MailCreatorService.java
  com.crud.tasks.service.MailCreatorService
 com/crud/tasks/service/SimpleEmailService.java
  com.crud.tasks.service.SimpleEmailService
-com/crud/tasks/service/TrelloService.java
- com.crud.tasks.service.TrelloService
-com/crud/tasks/sheduler/EmailScheduler.java
- com.crud.tasks.sheduler.EmailScheduler
+com/crud/tasks/controller/TrelloController.java
+ com.crud.tasks.controller.TrelloController
+com/crud/tasks/controller/TaskController.java
+ com.crud.tasks.controller.TaskController
