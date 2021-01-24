@@ -51,12 +51,12 @@ com/crud/tasks/mapper/TrelloMapper.java
  com.crud.tasks.mapper.TrelloMapper
 com/crud/tasks/trello/facade/TrelloFacade.java
  com.crud.tasks.trello.facade.TrelloFacade
-com/crud/tasks/service/SimpleEmailService.java
- com.crud.tasks.service.SimpleEmailService
 com/crud/tasks/config/AdminConfig.java
  com.crud.tasks.config.AdminConfig
 com/crud/tasks/service/MailCreatorService.java
  com.crud.tasks.service.MailCreatorService
+com/crud/tasks/service/SimpleEmailService.java
+ com.crud.tasks.service.SimpleEmailService
 com/crud/tasks/service/TrelloService.java
  com.crud.tasks.service.TrelloService
 com/crud/tasks/sheduler/EmailScheduler.java
