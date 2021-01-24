@@ -47,7 +47,7 @@ class TaskControllerTest {
         //When & Then
         mockMvc
                 .perform(MockMvcRequestBuilders
-                        .get("/v1/task/getTasks")
+                        .get("/v1/tasks")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].title", Matchers.is("test")));
@@ -61,7 +61,7 @@ class TaskControllerTest {
         when(taskController.getTask(id)).thenReturn(taskDto);
         //When & Then
         mockMvc.perform(MockMvcRequestBuilders
-                    .get("/v1/task/getTask?taskId=" + id)
+                    .get("/v1/tasks/" + id)
                     .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.title", Matchers.is("test")));
@@ -78,7 +78,7 @@ class TaskControllerTest {
 
         //When & Then
         mockMvc.perform(MockMvcRequestBuilders
-                    .put("/v1/task/updateTask")
+                    .put("/v1/tasks")
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(jsonContent)
                     .characterEncoding("UTF-8"))
