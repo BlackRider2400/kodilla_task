@@ -1,39 +1,47 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.0'
-	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'org.springframework.boot' version '3.2.0'  // Latest stable version as of now
+	id 'io.spring.dependency-management' version '1.1.4'  // Updated dependency management plugin
 	id 'java'
-	//id 'war'
+	id 'war'  // Added WAR plugin for deployment
 }
 
 group = 'com.crud'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+java {
+	sourceCompatibility = '21'  // Upgraded to Java 21
+}
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
-	compile('io.springfox:springfox-swagger2:2.9.2')
-	compile('io.springfox:springfox-swagger-ui:2.9.2')
-	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	runtimeOnly 'mysql:mysql-connector-java'
-//	runtimeOnly 'org.postgresql:postgresql'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0' // Updated Swagger for compatibility
+	runtimeOnly 'com.mysql:mysql-connector-j:8.0.32'
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat' // Changed for WAR compatibility
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'com.google.code.gson:gson'
-	compileOnly 'org.projectlombok:lombok:1.18.16'
-	annotationProcessor 'org.projectlombok:lombok:1.18.16'
+	testImplementation 'org.mockito:mockito-core:5.8.0'
+	testImplementation 'org.mockito:mockito-junit-jupiter:5.8.0'
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
 
-	testCompileOnly 'org.projectlombok:lombok:1.18.16'
-	testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
-
-	//providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testCompileOnly 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok'
 }
 
-test {
+bootWar {
+	archiveBaseName = 'kodilla_task'
+	archiveVersion = '0.0.1-SNAPSHOT'
+}
+
+tasks.named('test') {
 	useJUnitPlatform()
+	jvmArgs += '--add-opens=java.base/java.lang=ALL-UNNAMED'
 }
